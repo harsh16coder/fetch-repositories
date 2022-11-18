@@ -1,0 +1,35 @@
+.grid{
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.box{
+    margin: 20px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    column-gap: 20px;
+    box-shadow: 2px 2px 5px #9E9E9E, -1px -1px 5px #9E9E9E;
+    text-align: left;
+    text-transform: uppercase;
+}
+.box h5{
+    background-color: #dc8e12;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+}
+h4{
+    color: blue;
+}
+.para{
+    color: #555;
+}
+.grid > div{
+    flex-basis: calc(40% - 40px)
+}
