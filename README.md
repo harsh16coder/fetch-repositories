@@ -6,7 +6,7 @@ Fetching Repositories using github public api
 
 ## API Reference
 
-#### Get all items
+#### Get User Profile
 
 ```http
   GET https://api.github.com/users/${searchInput}
@@ -16,10 +16,10 @@ Fetching Repositories using github public api
 | :-------- | :------- |
 | `searchInput` | `string` | 
 
-#### Get item
+#### Get Repos
 
 ```http
-  GET https://api.github.com/users/${searchInput}/repos
+  GET https://api.github.com/users/${searchInput}/repos?page=${start}&per_page={6}
 ```
 
 | Parameter | Type     |
@@ -34,7 +34,7 @@ Fetching Repositories using github public api
 
 You can see live version here,
 
- https://63776b8cc7fd92009ec4fee5--fetch-repo.netlify.app
+ https://637c4ca47c6e7f3117b63280--fetch-repo.netlify.app/
 
 ## Installation
 
@@ -51,4 +51,4 @@ Install my-project with npm
 
 1. refer api documentation - [Documentation](https://docs.github.com/en/rest/reference)
 2. There are 4 components in this webpage
-3. SearchBar,Profile,Result,Pagination.
+3. SearchBar,Profile,Result,Pagination,Loader
