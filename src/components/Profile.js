@@ -3,7 +3,6 @@ import './profile.css';
 import { Icon } from '@iconify/react';
 function Profile(props){
     const {userProfile} = props;
-    console.log(userProfile.data);
     return(
         <React.Fragment>
             <div className="flex-container space-between">
